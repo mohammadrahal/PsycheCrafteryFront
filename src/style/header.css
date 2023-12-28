@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cont-color);
+
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.items_list{
+    margin-right: 20px;
+    color:var(--text-color)
+}
+
+.btn-items_list{
+    display: grid;
+    background: var(--btn-color);
+    color: var(--secondry-text);
+    width: 65px;
+    height: 31px;
+    border-radius: 32px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.btn-items_list:hover{
+    cursor: pointer;
+}
