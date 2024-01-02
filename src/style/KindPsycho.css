@@ -8,3 +8,10 @@
     padding: 1rem;
     background-color: #fff;
 }
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
