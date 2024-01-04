@@ -36,6 +36,7 @@ const SubHeader = () => {
               Empower Yourself: Embrace Mental Health Support
             </p>
           </div>
+          
         </div>
         <div className="sub_image">
           <img src="../images/subimage.png" alt="sub header" srcset="" />

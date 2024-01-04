@@ -1,0 +1,29 @@
+.help{
+    background: var(--text-color);
+    color: var( --secondry-text);
+    border-radius: 20px;
+    padding: 1rem;
+    width: 200px;
+}
+
+.help_btn_container{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 8px;
+    place-items: center;
+    justify-content: center;
+}
+
+.btn_help{
+    background: var(--btn-color);
+    border-radius: 20px;
+    width: 7em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help_title{
+    text-align: center;
+}

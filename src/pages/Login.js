@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, Link  } from "react-router-dom";
-
+import toast from "react-hot-toast";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,7 +10,7 @@ function Login() {
 
   const validateInput = () => {
     if (!email || !password) {
-      console.log("Email and Password are required");
+      toast.error("Email and Password are required");
       return false;
     }
 
@@ -32,19 +32,33 @@ function Login() {
         email,
         password,
       });
-
+  
       if (response.data && response.data.data) {
         const token = response.data.data;
-        // console.log(token)
         sessionStorage.setItem("authToken", token);
         navigate("/");
+        toast.success("Logged in successfully");
       } else {
-        console.log("Invalid response from server");
+        // Handle specific scenarios based on response status or data
+        const errorMessage = response.data?.message || "Invalid credentials";
+        if (errorMessage.toLowerCase().includes("incorrect email") || errorMessage.toLowerCase().includes("incorrect password")) {
+          toast.error("Incorrect email or password");
+        } else {
+          toast.error(errorMessage);
+        }
       }
     } catch (error) {
-      console.log(error.message);
+      // Check if it's a network error or another type of error
+      if (error.response) {
+        toast.error("Incorrect email or password");
+      } else if (error.request) {
+        toast.error("Network error. Please check your connection.");
+      } else {
+        toast.error("Error occurred during login");
+      }
     }
   };
+  
 
 
   return (

@@ -5,6 +5,7 @@ import Faq from '../component/Faq'
 import Help from '../component/Help'
 import Footer from '../component/Footer'
 import Therapy from '../component/Therapy'
+import Chatbot from '../component/Chatbot'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Header/>
       <SubHeader/>
       <KindPsycho/>
+      <Chatbot/>
       <Help/>
       <Therapy/>
       <Faq/>

@@ -1,0 +1,39 @@
+/* Footer.css */
+
+.footer {
+  background: var(--text-color);
+  color: var( --secondry-text);
+  padding: 1rem;
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.footer .links a {
+ text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+
+
+
+.links a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+
+.about-company i {
+  font-size: 25px;
+}
+.location i {
+  font-size: 18px;
+}
+
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.p_footer_icon{
+  display: flex;
+  align-items: center;
+}

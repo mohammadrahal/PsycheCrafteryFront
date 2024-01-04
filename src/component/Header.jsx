@@ -37,6 +37,8 @@ const Header = () => {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+
   return (
     <div>
       <header className="header container">
@@ -65,7 +67,7 @@ const Header = () => {
               >
                 {loggedIn ? "Logout" : "Login"}
               </button>
-              {loggedIn && <span>Welcome back</span>}
+              {/* {loggedIn && <span>Welcome back</span>} */}
             </li>
           </ul>
         </nav>

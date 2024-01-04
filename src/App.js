@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import User from "./pages/User";
+import { Toaster } from 'react-hot-toast';
 function App() {
   return (
     <div>
@@ -16,6 +17,10 @@ function App() {
           <Route path="/user" element={<User/>}/>
           <Route path="/admin" element={<Dashboard />} />
         </Routes>
+        <Toaster
+        position="top-right"
+        reverseOrder={false}
+        />
       </Router>
     </div>
   );

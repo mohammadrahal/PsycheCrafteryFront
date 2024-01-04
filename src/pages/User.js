@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-// import '../ComponentCSS/User.css'
+import '../style/user.css'
 import { getUserID } from "../util/userData";
 
 const User = () => {
@@ -44,7 +44,7 @@ const User = () => {
     };
   
   return (
-    <div>
+    <div className="container">
       {users.map((user) => (
         <div key={user._id} className="container_user">
           <p className=""> Full Name:{user.fullName}</p>
@@ -53,7 +53,7 @@ const User = () => {
           <p className="">Address: {user.address}</p>
         </div>
       ))}
-
+<button> delete account</button>
         </div>
   )
 }
