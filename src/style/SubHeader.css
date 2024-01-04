@@ -1,0 +1,64 @@
+.sub_flex {
+  background: var(--cont-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub_contant {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 9px;
+}
+
+.content {
+  width: 90%;
+  line-height: 1.5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.btn_content {
+  font-size: 10px;
+  text-wrap: wrap;
+  width: 25%;
+}
+
+.sub_btn {
+  background: var(--btn-color);
+  color: var(--secondry-text);
+  width: 9em;
+  height: 2.9em;
+  border: none;
+  border-radius: 15px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.sub_btn svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.sub_btn:hover {
+  cursor: pointer;
+}
+
+.sub_btn:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em;
+}
+
+.sub_image img {
+  width: 17rem;
+}
