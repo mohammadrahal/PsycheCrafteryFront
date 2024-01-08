@@ -1,14 +1,17 @@
-.sub_flex {
+.sub_header{
   background: var(--cont-color);
+}
+.sub_flex {
   display: flex;
   justify-content: space-evenly;
 }
 
 .sub_contant {
   display: flex;
-  flex-direction: column;
-  width: 70%;
-  gap: 9px;
+    flex-direction: column;
+    width: 70%;
+    gap: 9px;
+    justify-content: center;
 }
 
 .content {
@@ -21,21 +24,24 @@
   align-items: center;
   gap: 26px;
 }
-
+.btn_text{
+  color: var(--btn-text-color);
+  font-size: 16px;
+}
 .btn_content {
-  font-size: 10px;
+  font-size: 18px;
   text-wrap: wrap;
-  width: 25%;
+  color:var(--third-text-color);
 }
 
 .sub_btn {
   background: var(--btn-color);
-  color: var(--secondry-text);
-  width: 9em;
-  height: 2.9em;
+  color: var(--btn-text-color);
+  width: 240px;
+  height: 66px;
   border: none;
   border-radius: 15px;
-  text-align: right;
+  /* text-align: right; */
   transition: all 0.6s ease;
 }
 

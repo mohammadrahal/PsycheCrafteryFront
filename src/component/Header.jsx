@@ -31,21 +31,18 @@ const Header = () => {
     navigate("/");
   };
 
-
-
   // end
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   return (
-    <div>
-      <header className="header container">
+    <div className="header_color">
+      <header className=" container header">
         <div className="logo">
           <h3>PsycheCraftery</h3>
         </div>
-        <nav>
+        <nav className="nav">
           <ul className="items">
             <li className="items_list">
               {" "}
@@ -60,16 +57,34 @@ const Header = () => {
               {" "}
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
-            <button
-                className="btn-items_list"
-                onClick={loggedIn ? handleLogout : handleLogin}
-              >
-                {loggedIn ? "Logout" : "Login"}
-              </button>
-              {/* {loggedIn && <span>Welcome back</span>} */}
-            </li>
           </ul>
+          <button
+            className="btn-items_list"
+            onClick={loggedIn ? handleLogout : handleLogin}
+          >
+            {loggedIn ? "Logout" : "Login"}
+          </button>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-deep"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6h16" />
+              <path d="M7 12h13" />
+              <path d="M10 18h10" />
+            </svg>
+          </div>
+          {/* {loggedIn && <span>Welcome back</span>} */}
         </nav>
       </header>
     </div>

@@ -49,8 +49,7 @@ const Register = () => {
             user
           );
           console.log(response.data.data);
-        // console.log(user)
-        toast.success("regester ")
+        toast.success("regester successfully ")
           navigate("/");
         } catch (error) {
           toast.error(error);

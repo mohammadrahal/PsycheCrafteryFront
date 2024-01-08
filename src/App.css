@@ -1,19 +1,19 @@
 :root {
-  --bg-color: #fefdf2;
-  --cont-color: #fffcf6;
+  --menu-color:#FEFDF2;
+  --cont-color: #FAF0DF;
   --text-color: #081633;
-  --secondry-text: #f5fbff;
+  --text-color-2:#FAF0DF;
+  --btn-text-color: #f5fbff;
   --btn-color: #162dd1;
+  --third-text-color:#83858B;
 }
 *,
 *::after,
 *::before {
-  /* padding: 0;
-  margin: 0; */
   box-sizing: border-box;
-}
-ul {
+  text-decoration: none;
   list-style: none;
+ outline: none;
 }
 
 .container {

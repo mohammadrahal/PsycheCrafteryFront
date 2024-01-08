@@ -2,17 +2,12 @@ import "../style/SubHeader.css";
 
 const SubHeader = () => {
   return (
-    <div className="container">
+    <div className="sub_header">
+    <div className="container ">
       <div className="sub_flex">
         <div className="sub_contant">
-          <h1 className="sub_title"> PsycheCraftery</h1>
           <p className="content">
-            Welcome to our sanctuary for mental wellness—a haven of
-            transformative growth. Explore intricate craftsmanship fostering
-            resilience and mastering psychology. Discover tools tailored to
-            nurture your psyche, empowering you to navigate life's complexities
-            with confidence. Join us in honing skills that elevate your entire
-            being through psychology's landscape
+            Therapy for psycho path in you
           </p>
           <div className="btn">
             <button className="sub_btn">
@@ -30,7 +25,7 @@ const SubHeader = () => {
                   d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
                 ></path>
               </svg>
-              <div class="text"> Try Now </div>
+              <div class="btn_text"> Get started</div>
             </button>
             <p className="btn_content">
               Empower Yourself: Embrace Mental Health Support
@@ -42,6 +37,7 @@ const SubHeader = () => {
           <img src="../images/subimage.png" alt="sub header" srcset="" />
         </div>
       </div>
+    </div>
     </div>
   );
 };

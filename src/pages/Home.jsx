@@ -4,9 +4,9 @@ import KindPsycho from '../component/KindPsycho'
 import Faq from '../component/Faq'
 import Help from '../component/Help'
 import Footer from '../component/Footer'
-import Therapy from '../component/Therapy'
+import Therapy from '../component/Therapist'
 import Chatbot from '../component/Chatbot'
-
+import UserCounter from '../component/userCounter'
 const Home = () => {
   return (
     <div>
@@ -14,6 +14,7 @@ const Home = () => {
       <SubHeader/>
       <KindPsycho/>
       <Chatbot/>
+      <UserCounter/>
       <Help/>
       <Therapy/>
       <Faq/>

@@ -1,34 +1,46 @@
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--cont-color);
-
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@1,300&family=Red+Hat+Display&display=swap");
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Red Hat Display", sans-serif;
+}
+.header_color {
+  background: var(--cont-color);
 }
 
-.items{
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.items {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 315px;
+  height: 48px;
+  background: var(--menu-color);
+  border-radius: 50px;
 }
 
-.items_list{
-    margin-right: 20px;
-    color:var(--text-color)
+.items_list {
+  margin-right: 20px;
+  color: var(--btn-color);
 }
 
-.btn-items_list{
-    display: grid;
-    background: var(--btn-color);
-    color: var(--secondry-text);
-    width: 65px;
-    height: 31px;
-    border-radius: 32px;
-    justify-items: center;
-    align-items: center;
-    
+.btn-items_list {
+  display: grid;
+  background: var(--btn-color);
+  color: var(--btn-text-color);
+  width: 65px;
+  height: 31px;
+  border-radius: 32px;
+  justify-items: center;
+  align-items: center;
 }
 
-.btn-items_list:hover{
-    cursor: pointer;
+.btn-items_list:hover {
+  cursor: pointer;
 }

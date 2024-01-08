@@ -14,9 +14,7 @@ const Faq = () => {
       const response = await axios.get(
         `${process.env.REACT_APP_URL}/api/getFaq`
       );
-      console.log(response.data.data)
       setFaqs(response.data.data);
-
     } catch (error) {
       console.log(error);
     }

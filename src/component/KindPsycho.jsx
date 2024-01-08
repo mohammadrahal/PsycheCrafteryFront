@@ -5,7 +5,7 @@ const KindPsycho = () => {
     <div className='container'>
       <div className='flex'>
         <div className="card">
-indiv
+        Individual
         </div>
         <div className="card">
 Couples
